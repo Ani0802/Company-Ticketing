@@ -1,0 +1,43 @@
+.ticketdetail{
+    margin-left: 315px;
+    margin-top: 50px;
+    padding: 50px;
+}
+.login-box {
+      width: 380px;
+      margin: auto;
+      margin-top: 5%;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-box h2 {
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .float-obj {
+      position: absolute;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      animation: floatUp linear infinite;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0px); opacity: 1; }
+      to { transform: translateY(-100px); opacity: 0; }
+    }
+
+    .float-zone {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }

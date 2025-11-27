@@ -1,0 +1,215 @@
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Success Toast */
+.toast.success {
+    background-color: green;
+}
+
+/* Error Toast */
+.toast.errorr {
+    background-color: red;
+}
+
+/* Toast text */
+.toast-text {
+    flex: 1;
+}
+
+/* Close button */
+.toast-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+}
+
+/* Show toast */
+.toast.show {
+    display: flex;
+    opacity: 1;
+}
+
+body{background:lightgray}
+.panel-table .panel-body{
+  padding:0;
+}
+
+.panel-table .panel-body .table-bordered{
+  border-style: none;
+  margin:0;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type {
+    text-align:center;
+    width: 100px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:last-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:last-of-type {
+  border-right: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr > th:first-of-type,
+.panel-table .panel-body .table-bordered > tbody > tr > td:first-of-type {
+  border-left: 0px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr:first-of-type > td{
+  border-bottom: 0px;
+}
+
+.panel-table .panel-body .table-bordered > thead > tr:first-of-type > th{
+  border-top: 0px;
+}
+
+.panel-table .panel-footer .pagination{
+  margin:0; 
+}
+
+/*
+used to vertically center elements, may need modification if you're not using default sizes.
+*/
+.panel-table .panel-footer .col{
+ line-height: 34px;
+ height: 34px;
+}
+
+.panel-table .panel-heading .col h3{
+ line-height: 30px;
+ height: 30px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr > td{
+  line-height: 34px;
+}
+.table-responsive {
+    max-height: 500px;
+    overflow-y: auto;
+    width: 75vw;
+}
+@media (max-width: 768px) {
+    .table-responsive {
+        width: 100%;
+    }
+}
+
+html,body{margin:0;}
+header{
+	position: fixed;
+	top:0;
+	height: 125px;
+	width: 100%;
+	background: white;
+}
+
+main{
+	margin-top: 128px;
+}
+main h2.heading{
+  font-size: 2rem;
+  color: black;
+}
+
+
+@supports (height: 100vh) {	
+	body{	
+		background: linear-gradient(to right top, #0089f2 50%, #DDD 50%);
+		background-size: 100% calc(100% - 100vh + 129px);
+		background-repeat: no-repeat;
+	}
+
+	body:before{
+		content:'';
+		position: fixed;
+		top: 128px;
+		bottom: 0;
+		width: 100%;
+		z-index: -1;
+		background: rgb(0, 0, 0);
+	}
+}
+
+
+body{
+		font-family: "Open Sans";
+		font-size: 1.25rem;
+}
+main,header{
+	padding: 10px 10%;
+	box-sizing: border-box;
+}
+
+.linebr {
+    border: 1px solid black;
+}
+
+/* Raise Ticket section */
+.raiseTicket {
+  margin-bottom: 30px;
+
+  h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  /* Raised Ticket List section */
+  .raiseTicketList {
+    border: 1px solid #ccc;
+    padding: 20px;
+    h2 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  }
+  /* Ticket form */
+  .ticketForm {
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+  }
+}
